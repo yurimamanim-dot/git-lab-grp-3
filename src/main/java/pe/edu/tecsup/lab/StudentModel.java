@@ -24,10 +24,21 @@ public class StudentModel {
         return apellido;
     }
 
+    // 🔹 Mejora Sprint-2
+    public String getNombreCompleto() {
+        return nombre + " " + apellido;
+    }
+
+    public void actualizarNombre(String nuevoNombre) {
+        this.nombre = nuevoNombre;
+        System.out.println("Nombre actualizado correctamente");
+    }
+
     public void mostrarInfo() {
         System.out.println("===== DATOS DEL ESTUDIANTE =====");
         System.out.println("ID: " + id);
         System.out.println("Nombre: " + nombre);
         System.out.println("Apellido: " + apellido);
+        System.out.println("Nombre completo: " + getNombreCompleto());
     }
 }
