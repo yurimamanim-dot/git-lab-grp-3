@@ -11,7 +11,6 @@ public class StudentModel {
         this.nombre = nombre;
         this.apellido = apellido;
     }
-
     public int getId() {
         return id;
     }
@@ -22,6 +21,15 @@ public class StudentModel {
 
     public String getApellido() {
         return apellido;
+    }
+
+    public String getNombreCompleto() {
+        return nombre + " " + apellido;
+    }
+
+    public void actualizarNombre(String nuevoNombre) {
+        this.nombre = nuevoNombre;
+        System.out.println("Nombre actualizado correctamente");
     }
 
     public void mostrarInfo() {
