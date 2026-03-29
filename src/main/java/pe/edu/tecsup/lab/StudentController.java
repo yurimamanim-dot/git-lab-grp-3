@@ -1,11 +1,6 @@
-public class StudentModel {
-    private int id;
-    private String nombre;
-    private String apellido;
-
-    public StudentModel(int id, String nombre, String apellido) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
+public class StudentController {
+    public void getStudents() {
+        System.out.println("Obteniendo estudiantes...");
+        System.out.println("Mostrando lista de estudiantes registrada.");
     }
 }
